@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="nameForm" id="idForm">
+
+        <p>Фамилия<input class="inp" type="text" name="nameInput"></p> 
+        <p>Имя<input class="inp" type="text" name="nameInput1"></p> 
+        <p>Отчество<input class="inp" type="text" name="nameInput2"></p> 
+        <p>Возраст<input class="inp" type="text" name="Age"></p> 
+        <p>Аттестат<label class="inp"><input type="radio" name="kii">9 классов</label><label class="inp" style="margin-left: 90px;"><input type="radio" name="kii">11 классов</label></p>
+        
+        <p>Хобби<label class="inp"><input type="checkbox" name="kli">Музыка</label>
+            <label class="inp" style="margin-left: 90px;"><input type="checkbox" name="kli">Рисование</label>
+            <label class="inp" style="margin-left: 200px;"><input type="checkbox" name="kli">Вокал</label>
+            <label class="inp" style="margin-left: 280px;"><input type="checkbox" name="kli">Танцы</label>
+            <br>
+            <label class="inp"><input type="checkbox" name="kli">Спорт</label>
+            <label class="inp" style="margin-left: 90px;"><input type="checkbox" name="kli">Рукоделие</label>
+            <label class="inp" style="margin-left: 200px;"><input type="checkbox" name="kli">Фотография</label>
+            <label class="inp" style="margin-left: 320px;"><input type="checkbox" name="kli">Кулинария</label>
+            <br>
+            <label class="inp"><input type="checkbox" name="kli">Растениеводство</label>
+            <label class="inp" style="margin-left: 150px;"><input type="checkbox" name="kli">Волонтерство</label></p>
+            <br>
+
+            <p>Фото<input type="file" class="inp" name="photo"></p>
+            <p>Резюме<input type="file" class="inp" name="nephoto"></p>
+            <p>Почта<input type="text" class="inp" name="mail"></p>
+
+            <br>
+            <p>Пароль<input type="password" class="inp" id="password"></p>
+            <p>Повторите пароль<input type="password" class="inp" onkeyup="passwordVerification(getElementById('idForm'))" id="password1"></p> 
+            <div id="error">Пароли не совпадают</div>
+            <br>
+            <br>
+            <br>
+
+        <input type="button" name="but2" onclick="submitAction(getElementById('idForm'))" 
+        value="Отправить">       
+
+    </form>
+
+    <div id="story"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

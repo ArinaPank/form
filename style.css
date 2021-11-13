@@ -1,0 +1,18 @@
+form[name="nameForm"] {
+    left: 5%;
+}
+
+.inp {
+    position: absolute;
+    left: 30%;   
+}
+
+#error {
+    display: none;
+}
+
+#story{
+    margin: 20px;
+    width: 500px; 
+    height: 500px;
+}
